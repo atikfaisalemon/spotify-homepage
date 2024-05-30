@@ -14,12 +14,12 @@
 
       <main class="grid sm:grid-cols-12">
         <!-- Main content goes here -->
-        <div class="bg-[#000000] col-span-3">
+        <div class="bg-[#000000] col-span-4">
           <nav class="bg-[#121212] m-2 rounded-[6px]">
             <!-- logo -->
 
             <!-- Navigation content goes here -->
-            <div class="h-[64px] flex gap-6 py-6 pl-2">
+            <div class="h-[64px] flex gap-6 py-5 pl-2">
               <svg
                 data-encore-id="icon"
                 role="img"
@@ -33,7 +33,7 @@
               </svg>
               <h1 class="text-white">Home</h1>
             </div>
-            <div class="flex gap-6 pl-2">
+            <div class="flex gap-6 pl-2 pb-5">
               <svg
                 data-encore-id="icon"
                 role="img"
@@ -50,7 +50,8 @@
           </nav>
           <!-- side bar -->
           <div class="p-3 bg-[#121212] m-2 rounded-[6px] flex flex-col">
-            <div class="flex justify-between">
+            <!-- Your libraby section -->
+            <div class="flex justify-between py-5">
               <div class="flex gap-6">
                 <svg
                   data-encore-id="icon"
@@ -67,7 +68,7 @@
               </div>
               <!-- button  -->
               <div class="flex gap-6">
-                <button class="p-[8px] hover:bg-slate-400 rounded-full">
+                <button class="p-[8px] hover:bg-[#ffffff20] rounded-full">
                   <svg
                     data-encore-id="icon"
                     role="img"
@@ -80,7 +81,8 @@
                     ></path>
                   </svg>
                 </button>
-                <button class="">
+
+                <button class="p-[8px] hover:bg-[#ffffff20] rounded-full">
                   <svg
                     data-encore-id="icon"
                     role="img"
@@ -95,12 +97,117 @@
                 </button>
               </div>
             </div>
+            <!-- play list section -->
+            <div>
+              <div class="text-white flex gap-5">
+                <button
+                  class="px-[12px] py-[4px] bg-[#FFFFFF12] hover:bg-[#ffffff20] rounded-full"
+                >
+                  Aritst
+                </button>
+                <button
+                  class="px-[12px] py-[4px] bg-[#FFFFFF12] hover:bg-[#ffffff20] transition rounded-full"
+                >
+                  Albums
+                </button>
+              </div>
+            </div>
+            <!-- recent played -->
+            <div class="flex justify-between py-3">
+              <div
+                class="p-[8px] rounded-full hover:bg-[#FFFFFF20] w-[32px] h-[32px]"
+              >
+                <svg
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  class="w-[16px] h-[16px] fill-[#A7A7A7] hover:fill-white"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M7 1.75a5.25 5.25 0 1 0 0 10.5 5.25 5.25 0 0 0 0-10.5zM.25 7a6.75 6.75 0 1 1 12.096 4.12l3.184 3.185a.75.75 0 1 1-1.06 1.06L11.304 12.2A6.75 6.75 0 0 1 .25 7z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex items-center">
+                <h1 class="text-[#A7A7A7] hover:text-white">Recent</h1>
+                <svg
+                  data-encore-id="icon"
+                  role="img"
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  class="w-[16px] h-[16px] fill-[#A7A7A7] hover:fill-white"
+                >
+                  <path
+                    d="M15 14.5H5V13h10v1.5zm0-5.75H5v-1.5h10v1.5zM15 3H5V1.5h10V3zM3 3H1V1.5h2V3zm0 11.5H1V13h2v1.5zm0-5.75H1v-1.5h2v1.5z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <!-- Artist list -->
+            <div class="flex flex-col gap-4">
+              <div
+                class="flex gap-3 items-center p-2 hover:bg-[#FFFFFF20] rounded-lg"
+              >
+                <img
+                  class="h-12 w-12 rounded-lg"
+                  src="src/img/73016454.webp"
+                  alt=""
+                />
+                <div>
+                  <h1 class="text-white">Sounny Leony</h1>
+                  <p class="text-[#A7A7A7] font-light">Sex Artist</p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-3 items-center p-2 hover:bg-[#FFFFFF20] rounded-lg"
+              >
+                <img
+                  class="h-12 w-12 rounded-full"
+                  src="src/img/C2GgAFvXEAM17oR.jpg"
+                  alt=""
+                />
+                <div>
+                  <h1 class="text-white">Luice Foncy</h1>
+                  <p class="text-[#A7A7A7] font-light">Artist</p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-3 items-center p-2 hover:bg-[#FFFFFF20] rounded-lg"
+              >
+                <img
+                  class="h-12 w-12 rounded-full"
+                  src="src/img/images.jpeg"
+                  alt=""
+                />
+                <div>
+                  <h1 class="text-white">Sams Bhai</h1>
+                  <p class="text-[#A7A7A7] font-light">Artist</p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-3 items-center p-2 hover:bg-[#FFFFFF20] rounded-lg"
+              >
+                <img
+                  class="h-12 w-12 rounded-full"
+                  src="src/img/73016454.webp"
+                  alt=""
+                />
+                <div>
+                  <h1 class="text-white">Sounny Leony</h1>
+                  <p class="text-[#A7A7A7] font-light">Artist</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="bg-gray-400 col-span-9">
+        <div class="bg-black col-span-8">
           <header>
             <!-- Header content goes here -->
-            <div class="h-[64px] bg-black"></div>
+            <div class="h-[64px] bg-[#121212] mt-2 mr-2 rounded-t-sm"></div>
           </header>
         </div>
       </main>
