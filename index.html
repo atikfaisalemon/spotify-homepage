@@ -7,14 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="">
-      <header>
-        <!-- Header content goes here -->
-      </header>
-
-      <main class="grid sm:grid-cols-12">
-        <!-- Main content goes here -->
-        <div class="bg-[#000000] col-span-4">
+    <div class="h-screen w-screen overflow-hidden bg-white">
+      <!-- sidebar -->
+      <div class="flex flex-row">
+        <div class="flex w-[30%] flex-col bg-black">
           <nav class="bg-[#121212] m-2 rounded-[6px]">
             <!-- logo -->
 
@@ -49,7 +45,7 @@
             </div>
           </nav>
           <!-- side bar -->
-          <div class="p-3 bg-[#121212] m-2 rounded-[6px] flex flex-col">
+          <div class="p-3 bg-[#121212] m-2 rounded-[6px] flex flex-col mt-0">
             <!-- Your libraby section -->
             <div class="flex justify-between py-5">
               <div class="flex gap-2">
@@ -129,7 +125,9 @@
                   ></path>
                 </svg>
               </div>
-              <div class="flex items-center gap-2">
+              <div
+                class="flex items-center gap-2 transition-all hover:scale-105"
+              >
                 <h1 class="text-[#A7A7A7] hover:text-white">Recent</h1>
                 <svg
                   data-encore-id="icon"
@@ -204,50 +202,203 @@
             </div>
           </div>
         </div>
-        <div class="bg-black col-span-8">
-          <header>
-            <!-- Right Side -->
-            <div class="bg-[#121212] mt-2 mr-2 rounded-t-sm p-5">
-              <!-- Header content goes here -->
-
-              <div class="flex gap-2 items-center">
-                <button class="p-[8px] bg-[#ffffff20] rounded-full">
-                  <svg
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    class="h-[16px] w-[16px] fill-[#A7A7A7] hover:fill-white"
-                    viewBox="0 0 16 16"
+        <!-- main body -->
+        <div class="h-screen flex-1 py-2.5 pr-2.5 bg-black">
+          <div
+            class="relative h-[98svh] overflow-y-scroll overscroll-none bg-black rounded-lg"
+          >
+            <div class="z-10 sticky top-0 rounded-t-lg">
+              <div class="">
+                <!-- Top Navbar with Search-->
+                <div class="flex flex-col sticky top-0 inset-x-0 w-full">
+                  <div
+                    class="bg-[#202020] rounded-t-sm p-4 flex justify-between"
                   >
-                    <path
-                      d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
-                    ></path>
-                  </svg>
-                </button>
+                    <!-- Header content goes here -->
 
-                <button class="p-[8px] bg-[#ffffff20] rounded-full">
-                  <svg
-                    data-encore-id="icon"
-                    role="img"
-                    aria-hidden="true"
-                    class="h-[16px] w-[16px] fill-[#A7A7A7] hover:fill-white"
-                    viewBox="0 0 16 16"
+                    <div class="flex gap-2 items-center">
+                      <button class="p-[8px] bg-[#ffffff20] rounded-full">
+                        <svg
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="true"
+                          class="h-[16px] w-[16px] fill-[#A7A7A7] hover:fill-white"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"
+                          ></path>
+                        </svg>
+                      </button>
+
+                      <button class="p-[8px] bg-[#ffffff20] rounded-full">
+                        <svg
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="true"
+                          class="h-[16px] w-[16px] fill-[#A7A7A7] hover:fill-white"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+                          ></path>
+                        </svg>
+                      </button>
+                    </div>
+                    <!-- side bar nav button -->
+                    <div class="flex gap-2">
+                      <button
+                        class="flex gap-1 items-center justify-center py-[4px] px-[16px] rounded-full bg-white text-black font-semibold transition-all hover:scale-105"
+                      >
+                        Expolre Premiun
+                      </button>
+                      <button
+                        class="text-white flex gap-1 items-center justify-center py-[4px] px-[16px] rounded-full bg-[#0000008A] transition-all hover:scale-105"
+                      >
+                        <svg
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="true"
+                          viewBox="0 0 16 16"
+                          class="h-[16px] w-[16px] fill-white"
+                        >
+                          <path
+                            d="M4.995 8.745a.75.75 0 0 1 1.06 0L7.25 9.939V4a.75.75 0 0 1 1.5 0v5.94l1.195-1.195a.75.75 0 1 1 1.06 1.06L8 12.811l-.528-.528a.945.945 0 0 1-.005-.005L4.995 9.805a.75.75 0 0 1 0-1.06z"
+                          ></path>
+                          <path
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13z"
+                          ></path>
+                        </svg>
+                        <h1>Install App</h1>
+                      </button>
+                      <!-- notificaton button -->
+                      <button
+                        class="p-[10px] rounded-full bg-[#0000008A] transition-all hover:scale-105"
+                      >
+                        <svg
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="true"
+                          viewBox="0 0 16 16"
+                          class="hover:fill-white h-[16px] w-[16px] fill-[#A7A7A7]"
+                        >
+                          <path
+                            d="M8 1.5a4 4 0 0 0-4 4v3.27a.75.75 0 0 1-.1.373L2.255 12h11.49L12.1 9.142a.75.75 0 0 1-.1-.374V5.5a4 4 0 0 0-4-4zm-5.5 4a5.5 5.5 0 0 1 11 0v3.067l2.193 3.809a.75.75 0 0 1-.65 1.124H10.5a2.5 2.5 0 0 1-5 0H.957a.75.75 0 0 1-.65-1.124L2.5 8.569V5.5zm4.5 8a1 1 0 1 0 2 0H7z"
+                          ></path>
+                        </svg>
+                      </button>
+                      <button
+                        class="p-[6px] rounded-full bg-[#0000008A] transition-all hover:scale-105"
+                      >
+                        <img
+                          class="h-[24px] w-[24px] rounded-full"
+                          src="src/img/images.jpeg"
+                          alt=""
+                        />
+                      </button>
+                    </div>
+                  </div>
+                  <!-- Heaher 2nd div -->
+                  <div class="bg-[#202020] p-4 flex gap-2">
+                    <button
+                      class="px-[12px] py-[4px] bg-white transition rounded-full text-black"
+                    >
+                      All
+                    </button>
+                    <button
+                      class="px-[12px] py-[4px] bg-[#FFFFFF12] hover:bg-[#ffffff20] transition rounded-full text-white"
+                    >
+                      Music
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Main Content -->
+                <div>
+                  <div
+                    class="bg-gradient-to-t from-[#121212] to-[#1f1f1f] py-6 px-3"
                   >
-                    <path
-                      d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
-                    ></path>
-                  </svg>
-                </button>
+                    <ul class="flex items-center justify-between text-white">
+                      <li>Peopoler Aritst</li>
+                      <li>Show All</li>
+                    </ul>
+                    <div class="flex">
+                      <div
+                        class="w-1/4 hover:bg-[#1f1f1f] text-white p-3 rounded-lg relative group"
+                      >
+                        <img
+                          class="rounded-full p-2"
+                          src="src/img/Artist/channels4_profile.jpg"
+                          alt=""
+                        />
+                        <h1 class="font-semibold">Pretam</h1>
+                        <p class="font-light text-[#AAAAAA80]">Aritst</p>
+                        <div
+                          class="p-6 bg-green-500 rounded-full w-[48px] h-[48px] absolute top-44 right-6 invisible group-hover:visible"
+                        >
+                          <svg
+                            data-encore-id="icon"
+                            role="img"
+                            aria-hidden="true"
+                            viewBox="0 0 24 24"
+                            class="h-[24px] w-[24px] fill-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                          >
+                            <path
+                              d="M5.7 3a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7H5.7zm10 0a.7.7 0 0 0-.7.7v16.6a.7.7 0 0 0 .7.7h2.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-2.6z"
+                            ></path>
+                          </svg>
+                        </div>
+                      </div>
+                      <div
+                        class="w-1/4 hover:bg-[#1f1f1f] text-white p-3 rounded-lg"
+                      >
+                        <img
+                          class="rounded-full p-2"
+                          src="src/img/Artist/6da91fcce51b741879f767d46f6ca8fd.webp"
+                          alt=""
+                        />
+                        <h1 class="font-semibold">Pretam</h1>
+                        <p class="font-light text-[#AAAAAA80]">Aritst</p>
+                      </div>
+                      <div
+                        class="w-1/4 hover:bg-[#1f1f1f] text-white p-3 rounded-lg"
+                      >
+                        <img
+                          class="rounded-full p-2"
+                          src="src/img/Artist/ab6761610000e5ebc40600e02356cc86f0debe84.jpeg"
+                          alt=""
+                        />
+                        <h1 class="font-semibold">Pretam</h1>
+                        <p class="font-light text-[#AAAAAA80]">Aritst</p>
+                      </div>
+                      <div
+                        class="w-1/4 hover:bg-[#1f1f1f] text-white p-3 rounded-lg"
+                      >
+                        <img
+                          class="rounded-full p-2"
+                          src="src/img/Artist/images (1).jpeg"
+                          alt=""
+                        />
+                        <h1 class="font-semibold">Pretam</h1>
+                        <p class="font-light text-[#AAAAAA80]">Aritst</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+              <div></div>
+              <!-- <div class="absolute left-0 right-2.5 top-0 rounded-lg py-32">
+              <div class="w-full bg-indigo-400 py-60">
+                Main Body Content goes here
+              </div>
+              <div class="w-full bg-indigo-100 py-60">
+                Main Body Content goes here 2
+              </div>
+            </div> -->
             </div>
-          </header>
+          </div>
         </div>
-      </main>
-
-      <footer>
-        <!-- Footer content goes here -->
-      </footer>
+      </div>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
